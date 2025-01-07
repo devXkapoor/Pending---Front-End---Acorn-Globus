@@ -1,8 +1,8 @@
 import Footer from "../Components/Footer"
-import Navbar from "../Components/Navbar"
+import NavBar from "../Components/NavBar"
 import RedditAdCard from "../Components/RedditAdCard"
 import SaleCard from "../Components/SaleCard"
-import Sidebar from "../Components/Sidebar"
+import Sidebar from "../Components/SideBar"
 
 export type Child = {
     children: React.ReactNode
@@ -12,7 +12,7 @@ const Layout = ({ children }: Child) => {
     return (
         <>
             <div>
-                <Navbar />
+                <NavBar />
                 <div className="flex justify-between border-2 border-orange-500 h-full">
 
                     <Sidebar />

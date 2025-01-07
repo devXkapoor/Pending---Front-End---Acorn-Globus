@@ -1,12 +1,21 @@
 
-const Navbar = () => {
+const NavBar = () => {
     return (
         <>
             <div className="border-2 border-orange-500 h-14">
-                Navbar
+                <ThemeButton />
+                <RedditButton />
+                <HomeButton />
+                <PopularButton />
+                <AllButton />
+                <SearchBar />
+                <CreatePostButton />
+                <MessagesButton />
+                <MailButton />
+                <ProfileButton />
             </div>
         </>
     )
 }
 
-export default Navbar
+export default NavBar

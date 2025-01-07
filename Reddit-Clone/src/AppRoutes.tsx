@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router"
 import Layout from "./Layouts/Layout"
-import HomePage from "./Pages/HomePage"
+import MainContent from "./Components/MainContent"
 
 const AppRoutes = () => {
   return (
@@ -8,7 +8,7 @@ const AppRoutes = () => {
       <Routes>
         <Route path="/" element={
           <Layout>
-            <HomePage />
+            <MainContent />
           </Layout>} />
       </Routes>
     </>
