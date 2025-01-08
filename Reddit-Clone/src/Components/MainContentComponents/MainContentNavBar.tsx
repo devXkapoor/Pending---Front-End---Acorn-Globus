@@ -2,9 +2,9 @@
 const MainContentNavBar = () => {
     return (
         <>
-            <div className="flex flex-row border-2 border-orange-500">
-                <div className="text-bold text-2xl border-2 border-orange-500">Popular</div>
-                <div className="text-bold text-xl text-gray-400 border-2 border-orange-500">
+            <div className="flex flex-row justify-between border-2 border-orange-500">
+                <div className="font-semibold text-2xl text-gray-700 border-2 border-orange-500">Popular</div>
+            <div className="flex flex-row gap-2 font-semibold text-xl text-gray-500 border-2 border-orange-500">
                     <div>Hot</div>
                     <div>New</div>
                     <div>Controversial</div>

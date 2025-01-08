@@ -2,7 +2,13 @@
 const SearchBar = () => {
     return (
         <>
-            <div>SearchBar</div>
+            <div>
+                <input
+                    type="text"
+                    className="border-2 border-gray-500 bg-gray-200"
+                />
+
+            </div>
         </>
     )
 }

@@ -1,8 +1,15 @@
+import { RedditIcon } from "../CommonComponents/Icons"
 
 const RedditButton = () => {
     return (
         <>
-            <div>RedditButton</div>
+            <div>
+                <button>
+                    <div className="flex flex-row gap-1 items-center ">
+                        <RedditIcon />
+                    </div>
+                </button>
+            </div>
         </>
     )
 }

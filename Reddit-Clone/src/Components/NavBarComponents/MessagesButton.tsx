@@ -1,8 +1,13 @@
+import { MessageIcon } from "../CommonComponents/Icons"
 
 const MessagesButton = () => {
     return (
         <>
-            <div>MessagesButton</div>
+            <div>
+                <button>
+                    <MessageIcon />
+                </button>
+            </div>
         </>
     )
 }

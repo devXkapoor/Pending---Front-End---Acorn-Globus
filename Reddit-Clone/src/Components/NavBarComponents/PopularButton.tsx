@@ -1,8 +1,11 @@
+import { PopularIcon } from "../CommonComponents/Icons"
 
 const PopularButton = () => {
     return (
         <>
-            <div>PopularButton</div>
+            <div>
+                <PopularIcon />
+            </div>
         </>
     )
 }

@@ -1,8 +1,11 @@
+import { ThemeIcon } from "../CommonComponents/Icons"
 
 const ThemeButton = () => {
     return (
         <>
-            <div>ThemeButton</div>
+            <div>
+                <ThemeIcon />
+            </div>
         </>
     )
 }

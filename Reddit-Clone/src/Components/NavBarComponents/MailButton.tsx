@@ -1,8 +1,13 @@
+import { MailIcon } from "../CommonComponents/Icons"
 
 const MailButton = () => {
     return (
         <>
-            <div>MailButton</div>
+            <div>
+                <button>
+                    <MailIcon />
+                </button>
+            </div>
         </>
     )
 }

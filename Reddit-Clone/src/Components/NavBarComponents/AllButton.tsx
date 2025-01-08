@@ -1,8 +1,11 @@
+import { AllIcon } from "../CommonComponents/Icons"
 
 const AllButton = () => {
     return (
         <>
-            <div>AllButton</div>
+            <div>
+                <AllIcon />
+            </div>
         </>
     )
 }

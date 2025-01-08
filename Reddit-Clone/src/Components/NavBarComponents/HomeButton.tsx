@@ -1,8 +1,11 @@
+import { HomeIcon } from "../CommonComponents/Icons"
 
 const HomeButton = () => {
     return (
         <>
-            <div>HomeButton</div>
+            <div>
+                <HomeIcon />
+            </div>
         </>
     )
 }
