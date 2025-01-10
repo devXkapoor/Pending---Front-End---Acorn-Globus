@@ -4,6 +4,7 @@ import RedditAdCard from "../Components/RedditAdCard"
 import SaleCard from "../Components/SaleCard"
 import SideBar from "../Components/SideBar"
 
+
 export type Child = {
     children: React.ReactNode
 }
