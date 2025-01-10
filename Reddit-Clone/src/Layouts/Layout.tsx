@@ -2,7 +2,7 @@ import Footer from "../Components/Footer"
 import NavBar from "../Components/NavBar"
 import RedditAdCard from "../Components/RedditAdCard"
 import SaleCard from "../Components/SaleCard"
-import Sidebar from "../Components/SideBar"
+import SideBar from "../Components/SideBar"
 
 export type Child = {
     children: React.ReactNode
@@ -11,16 +11,16 @@ export type Child = {
 const Layout = ({ children }: Child) => {
     return (
         <>
-            <div>
+            <div className="container m-auto h-screen">
                 <NavBar />
-                <div className="flex justify-between border-2 border-orange-500 h-full">
-
-                    <Sidebar />
+                <div className="flex justify-between bg-gray-100 h-full p-0 m-0">
+                    <SideBar />
                     {children}
-                    {/* <MainContent /> */}
-                    <div className=" flex flex-col flex-1 w-1/4">
-                        <SaleCard />
-                        <RedditAdCard />
+                    <div className="flex flex-col justify-between items-center p-2 w-3/12">
+                        <div className=" flex flex-col gap-4 ">
+                            <SaleCard />
+                            <RedditAdCard />
+                        </div>
                         <Footer />
                     </div>
                 </div>

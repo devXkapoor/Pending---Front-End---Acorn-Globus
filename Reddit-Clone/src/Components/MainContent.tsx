@@ -1,8 +1,9 @@
 import MainContentCard from "./MainContentComponents/MainContentCard"
 import MainContentNavBar from "./MainContentComponents/MainContentNavBar"
+import SampleThubnailImage from "../assets/Sample-Thubnail.jpg"
 
 interface MainContentCardObjectType {
-    thumbnail: string;
+    thumbnailImage: string;
     title: string;
     postedByPic: string;
     postedByName: string;
@@ -15,48 +16,59 @@ const MainContent = () => {
     const MainContentCardArray = [
 
         {
-            thumbnail: "abc",
-            title: "abc",
-            postedByPic: "abc",
-            postedByName: "abc",
-            postDate: "abc",
-            numComments: "abc",
-            numShare: "abc",
-            numUpVotes: "abc",
+            thumbnailImage: SampleThubnailImage,
+            title: "Title",
+            postedByPic: "postedByPic",
+            postedByName: "postedByName",
+            postDate: "postDate",
+            numComments: 716,
+            numShare: 364,
+            numUpVotes: "50K",
         },
         {
-            thumbnail: "abc",
-            title: "abc",
-            postedByPic: "abc",
-            postedByName: "abc",
-            postDate: "abc",
-            numComments: "abc",
-            numShare: "abc",
-            numUpVotes: "abc",
+            thumbnailImage: SampleThubnailImage,
+            title: "Title",
+            postedByPic: "postedByPic",
+            postedByName: "postedByName",
+            postDate: "postDate",
+            numComments: 716,
+            numShare: 364,
+            numUpVotes: "50K",
         },
         {
-            thumbnail: "abc",
-            title: "abc",
-            postedByPic: "abc",
-            postedByName: "abc",
-            postDate: "abc",
-            numComments: "abc",
-            numShare: "abc",
-            numUpVotes: "abc",
+            thumbnailImage: SampleThubnailImage,
+            title: "Title",
+            postedByPic: "postedByPic",
+            postedByName: "postedByName",
+            postDate: "postDate",
+            numComments: 716,
+            numShare: 364,
+            numUpVotes: "50K",
         },
+        {
+            thumbnailImage: SampleThubnailImage,
+            title: "Title",
+            postedByPic: "postedByPic",
+            postedByName: "postedByName",
+            postDate: "postDate",
+            numComments: 716,
+            numShare: 364,
+            numUpVotes: "50K",
+        },
+
     ]
 
     return (
         <>
-            <div className="border-2 border-orange-500 w-2/4 p-2 bg-[#E5EBEE]">
-                <div className="bg-white">
+            <div className="w-7/12 p-2 m-0">
+                <div className="bg-white h-full rounded-md p-2">
                     <MainContentNavBar />
                     {
                         MainContentCardArray.map((obj) => {
                             return (
                                 <>
                                     <MainContentCard
-                                        thumbnail={obj.thumbnail}
+                                        thumbnailImage={obj.thumbnailImage}
                                         title={obj.title}
                                         postedByPic={obj.postedByPic}
                                         postedByName={obj.postedByName}

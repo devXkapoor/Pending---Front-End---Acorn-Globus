@@ -1,6 +1,7 @@
-import { CommentIcon, DownIcon, MoreIcon, ShareIcon, UpIcon } from "../CommonComponents/Icons"
+import { CommentIcon, DownVoteIcon, MoreIcon, ShareIcon, UpVoteIcon } from "../CommonComponents/Icons"
+import MainContentCardThubnail from "./MainContentCardThubnail"
 
-const MainContentCard = ({ thumbnail,
+const MainContentCard = ({ thumbnailImage,
     title,
     postedByPic,
     postedByName,
@@ -10,11 +11,11 @@ const MainContentCard = ({ thumbnail,
     numUpVotes }) => {
     return (
         <>
-            <div className="flex flex-row border-2 border-gray-500 p-2 m-2 rounded-2xl">
-                <div>
-                    {thumbnail}
+            <div className="flex flex-row border-2 border-gray-200 justify-between p-2 m-2 rounded-2xl">
+                <div className="">
+                    <MainContentCardThubnail thumbnailImage={thumbnailImage} />
                 </div>
-                <div className="flex flex-col">
+                <div className="flex flex-col justify-between">
                     <div>
                         {title}
                     </div>
@@ -27,17 +28,17 @@ const MainContentCard = ({ thumbnail,
                         </span>
                     </div>
                 </div>
-                <div>
-                    <span><CommentIcon /> {numComments} Comments</span>
-                    <span><ShareIcon /> {numShare} Share</span>
-                    <span><MoreIcon /> More</span>
+                <div className="flex flex-col justify-between">
+                    <span className="flex flex-row items-center"><CommentIcon /> {numComments} Comments</span>
+                    <span className="flex flex-row items-center"><ShareIcon /> {numShare} Share</span>
+                    <span className="flex flex-row items-center"><MoreIcon /> More</span>
                 </div>
-                <div className="flex flex-col">
-                    <UpIcon />
+                <div className="flex flex-col justify-between items-center">
+                    <UpVoteIcon />
                     {numUpVotes}
-                    <DownIcon />
+                    <DownVoteIcon />
                 </div>
-            </div>
+            </div >
         </>
     )
 }

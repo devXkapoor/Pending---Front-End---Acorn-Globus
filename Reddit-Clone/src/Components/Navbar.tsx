@@ -12,19 +12,19 @@ import ThemeButton from "./NavBarComponents/ThemeButton"
 const NavBar = () => {
     return (
         <>
-            <div className="flex flex-row justify-between border-2 border-orange-500 h-14">
-                <div className="flex flex-row border-2 border-orange-500 h-14">
+            <div className="flex flex-row justify-between items-center h-14 p-2 m-2">
+                <div className="flex flex-row justify-between items-center h-14">
                     <ThemeButton />
                     <RedditButton />
                 </div>
-                <div className="flex flex-row justify-between border-2 border-orange-500 h-14">
+                <div className="flex flex-row gap-3 justify-between items-center h-14 w-3/5">
                     <HomeButton />
                     <PopularButton />
                     <AllButton />
                     <SearchBar />
                     <CreatePostButton />
                 </div>
-                <div className="flex flex-row justify-between border-2 border-orange-500 h-14">
+                <div className=" flex flex-row gap-2 justify-between items-center h-14">
                     <MessagesButton />
                     <MailButton />
                     <ProfileButton />
