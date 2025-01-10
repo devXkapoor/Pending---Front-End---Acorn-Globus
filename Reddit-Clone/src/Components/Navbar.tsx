@@ -12,7 +12,7 @@ import ThemeButton from "./NavBarComponents/ThemeButton"
 const NavBar = () => {
     return (
         <>
-            <div className="flex flex-row justify-between items-center h-14 p-2 m-2">
+            <div className="flex flex-row justify-between items-center h-14 p-2 border-2 border-red-500">
                 <div className="flex flex-row justify-between items-center h-14">
                     <ThemeButton />
                     <RedditButton />

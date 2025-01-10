@@ -87,7 +87,7 @@ const SideBar = () => {
     ]
     return (
         <>
-            <div className="flex flex-col justify-start p-2 m-0">
+            <div className="flex flex-col justify-start p-2 m-0 border-2 border-red-500">
                 <FilterByTab />
                 {SideBarCardHeadingArray.map((obj) => {
                     return (
