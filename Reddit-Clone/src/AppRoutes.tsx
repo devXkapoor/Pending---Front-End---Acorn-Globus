@@ -4,14 +4,12 @@ import MainContent from "./Components/MainContent"
 
 const AppRoutes = () => {
   return (
-    <>
-      <Routes>
-        <Route path="/" element={
-          <Layout>
-            <MainContent />
-          </Layout>} />
-      </Routes>
-    </>
+    <Routes>
+      <Route path="/" element={
+        <Layout>
+          <MainContent />
+        </Layout>} />
+    </Routes>
   )
 }
 
