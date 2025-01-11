@@ -4,7 +4,7 @@ const FilterByTab = () => {
         <>
             <div className="flex flex-row justify-between bg-white outline-gray-200 outline-none outline-offset-0 rounded-md p-2 m-2">
                 <div>
-                    Filter by
+                    Filter byyyyy
                 </div>
                 <div>
                     <select name="" id="">
